@@ -3,8 +3,9 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #F8F8FF;
+    background-color: #D1C4C4;
     position: relative;
+    gap: 64px;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
     align-items: stretch;
     height: 100vh;
     width: calc(100vh);
+    background: #FFFAF0;
 }
 
 .modes {
@@ -31,7 +33,7 @@ body {
     background-color: lightgray;
     flex: auto;
     border: 1px solid lightcyan;
-    
+    cursor: pointer;
 }
 
 .pixelated {
@@ -41,17 +43,26 @@ body {
 button {
     cursor: pointer;
     font-size: 32px;
-    background-color: magenta;
     border-radius: 5px;
 }
 
 .buttons {
-    position: absolute;
-    top: 25%;
-    right: 10%;
+    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
+}
+
+#newGrid {
+    background-color: #2B83AC;
+}
+
+#randomRGB {
+    background-image: linear-gradient(90deg, rgba(255, 10, 10, 0.8), rgba(10, 255, 10, 0.8), rgba(10,10, 255, 0.8));
+}
+
+#sketchMode {
+    background-image: linear-gradient(to bottom right, white, black);
 }
