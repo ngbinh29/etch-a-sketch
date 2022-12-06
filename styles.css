@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: #F8F8FF;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+    width: calc(100vh);
+}
+
+.modes {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+    flex: auto;
+}
+
+.pixel {
+    background-color: lightgray;
+    flex: auto;
+    border: 1px solid lightcyan;
+    
+}
+
+.pixelated {
+    background-color: black;
+}
+
+button {
+    cursor: pointer;
+    font-size: 32px;
+    background-color: magenta;
+    border-radius: 5px;
+}
+
+.buttons {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 16px;
+}
